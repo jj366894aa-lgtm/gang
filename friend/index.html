@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Friend</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>gangster🤵‍♂️🥃🚬</h1>
+
+<!-- 🔹 PHOTOS (10) -->
+<h2>Photos</h2>
+<div class="gallery">
+    <div class="item"><img src="media/img1.jpg.jpeg"><p>gangster gurumoorthi🚬</p></div>
+    <div class="item"><img src="media/img2.jpg.jpeg"><p>ex girl friend 1💔👩‍🦰</p></div>
+    <div class="item"><img src="media/img3.jpg.jpeg"><p>gangster on function😎🔥</p></div>
+    <div class="item"><img src="media/img4.jpg.jpeg"><p>constable gurumoorthi👮‍♂️👊💥</p></div>
+    <div class="item"><img src="media/img5.jpg.jpeg"><p>gurumoorthi with sister🛡️👭💙</p></div>
+    <div class="item"><img src="media/img6.jpg.jpeg"><p>blood🤜🤛👬</p></div>
+    <div class="item"><img src="media/img7.jpg.jpeg"><p>ex girl friend 2😒💔</p></div>
+    <div class="item"><img src="media/img8.jpg.jpeg"><p>ex girl friend🖤➡️💔</p></div>
+    <div class="item"><img src="media/img9.jpg.jpeg"><p>new love💋❤️</p></div>
+    <div class="item"><img src="media/img10.jpg.jpeg"><p>coming soon🫶💓</p></div>
+</div>
+
+<!-- 🔹 VIDEOS (5) -->
+<h2>Videos</h2>
+<div class="gallery">
+    <div class="item"><video controls><source src="media/video1.mp4.mp4"></video><p>duke rider🏍️💨</p></div>
+    <div class="item"><video controls><source src="media/video2.mp4.mp4"></video><p>play boy😎🔥</p></div>
+    <div class="item"><video controls><source src="media/video3.mp4.mp4"></video><p>mass movement👑💯</p></div>
+    <div class="item"><video controls><source src="media/video4.mp4.mp4"></video><p>gangster vibe mode🧋😎✨</p></div>
+    <div class="item"><video controls><source src="media/video5.mp4.mp4"></video><p>padippu arakkan📝😤📚</p></div>
+</div>
+
+<!-- 🔒 FLOAT BUTTON -->
+<button class="float-btn" onclick="openPrivate()">🔒</button>
+
+<!-- 🔐 PRIVATE SECTION -->
+<div id="privateBox" class="private-box">
+    <h2>Private Gallery</h2>
+
+    <!-- 2 Images -->
+    <div class="item"><img src="media/private1.jpg.jpeg"><p>sexy boy😂🍺</p></div>
+    <div class="item"><img src="media/private2.jpg.jpeg"><p>beer only🌙🍺😎</p></div>
+
+    <!-- 2 Videos -->
+    <div class="item"><video controls><source src="media/privatevideo1.mp4.mp4"></video><p></p>popala soku💖👫😄</div>
+    <div class="item"><video controls><source src="media/privatevideo2.mp4.mp4"></video><p>playing with girl friend😜👫🎮</p></div>
+
+    <br>
+    <button onclick="closePrivate()">Close</button>
+</div>
+
+<script>
+function openPrivate() {
+    let pass = prompt("Enter Password:");
+    if(pass === "0024") {
+        document.getElementById("privateBox").style.display = "block";
+    } else {
+        alert("Wrong Password!");
+    }
+}
+
+function closePrivate() {
+    document.getElementById("privateBox").style.display = "none";
+}
+</script>
+
+</body>
+</html>
